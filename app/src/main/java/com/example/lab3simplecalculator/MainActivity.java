@@ -1,6 +1,8 @@
 package com.example.lab3simplecalculator;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -97,5 +99,34 @@ public class MainActivity extends AppCompatActivity {
     public void btnClearClick(View view) {
         TextView eText = (TextView)findViewById(R.id.resultEdit);
         eText.setText("");
+    }
+
+    public void btnResultClick(View view) {
+        if (optr != Operator.none) {
+            TextView eText = (TextView)findViewById(R.id.resultEdit);
+            data2 = Double.parseDouble(eText.getText().toString());
+            double result = 0;
+            if (optr == Operator.add) {
+                result = data1 + data2;
+            }
+            else if (optr == Operator.minus) {
+                result = data1 - data2;
+            }
+            else if (optr == Operator.multiply) {
+                result = data1 * data2;
+            }
+            else if (optr == Operator.divide) {
+                result = data1 / data2;
+            }
+
+            optr = Operator.none;
+            data1 = result;
+            if ((result - (int)result) != 0){
+                eText.setText(String.valueOf(result));
+            }
+            else {
+                eText.setText(String.valueOf((int)result));
+            }
+        }
     }
 }

@@ -29,7 +29,8 @@
             <TextView
                 android:id="@+id/resultEdit"
                 android:layout_width="fill_parent"
-                android:layout_height="160dp" />
+                android:layout_height="160dp"
+                android:textSize="60sp" />
 
             <LinearLayout
                 android:id="@+id/ButtonRow01"
@@ -43,28 +44,36 @@
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_07" />
+                    android:onClick="btn07Click"
+                    android:text="@string/button_07"
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/button08"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_08" />
+                    android:onClick="btn08Click"
+                    android:text="@string/button_08"
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/button09"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_09" />
+                    android:onClick="btn09Click"
+                    android:text="@string/button_09"
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/buttonAdd"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_Add" />
+                    android:onClick="btnAddClick"
+                    android:text="@string/button_Add"
+                    android:textSize="34sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -79,28 +88,36 @@
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_04" />
+                    android:onClick="btn04Click"
+                    android:text="@string/button_04"
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/button05"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_05" />
+                    android:onClick="btn05Click"
+                    android:text="@string/button_05"
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/button06"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_06" />
+                    android:onClick="btn06Click"
+                    android:text="@string/button_06"
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/buttonSub"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_Sub" />
+                    android:onClick="btnMinusClick"
+                    android:text="@string/button_Sub"
+                    android:textSize="34sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -115,28 +132,36 @@
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_01" />
+                    android:onClick="btn01Click"
+                    android:text="@string/button_01"
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/button02"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_02" />
+                    android:onClick="btn02Click"
+                    android:text="@string/button_02"
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/button03"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_03" />
+                    android:onClick="btn03Click"
+                    android:text="@string/button_03"
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/buttonDiv"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_Div" />
+                    android:onClick="btnDivideClick"
+                    android:text="@string/button_Div"
+                    android:textSize="34sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -151,35 +176,45 @@
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_CE" />
+                    android:onClick="btnClearClick"
+                    android:text="@string/button_CE"
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/button00"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_00" />
+                    android:onClick="btn00Click"
+                    android:text="@string/button_00"
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/buttonDot"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_Dot" />
+                    android:onClick="btnDotClick"
+                    android:text="@string/button_Dot"
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/buttonMult"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_Mult" />
+                    android:onClick="btnMultiplyClick"
+                    android:text="@string/button_Mult"
+                    android:textSize="34sp" />
             </LinearLayout>
 
             <Button
                 android:id="@+id/buttonEQ"
                 android:layout_width="fill_parent"
                 android:layout_height="100dp"
-                android:text="@string/button_EQ" />
+                android:onClick="btnResultClick"
+                android:text="@string/button_EQ"
+                android:textSize="60sp" />
 
         </LinearLayout>
     </FrameLayout>

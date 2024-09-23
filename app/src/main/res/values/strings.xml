@@ -15,7 +15,6 @@
     <string name="button_CE">C</string>
     <string name="button_Dot">.</string>
     <string name="button_EQ">=</string>
-    <string name="button_Div">\\u00D7</string>
-    <string name="button_M">u00F7</string>
-    <string name="button_Mult">\\u00F7</string>
+    <string name="button_Div">\u00F7</string>
+    <string name="button_Mult">\u00D7</string>
 </resources>
