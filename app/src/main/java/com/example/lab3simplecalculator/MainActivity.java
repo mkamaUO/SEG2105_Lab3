@@ -9,6 +9,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    private enum Operator {none, add, minus, multiply, divide}
+    private double data1 = 0, data2 = 0;
+    private Operator optr = Operator.none;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +23,79 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void btn00Click(View view) {
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        eText.setText(eText.getText() + "0");
+    }
+    public void btn01Click(View view) {
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        eText.setText(eText.getText() + "1");
+    }
+    public void btn02Click(View view) {
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        eText.setText(eText.getText() + "2");
+    }
+    public void btn03Click(View view) {
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        eText.setText(eText.getText() + "3");
+    }
+    public void btn04Click(View view) {
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        eText.setText(eText.getText() + "4");
+    }
+    public void btn05Click(View view) {
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        eText.setText(eText.getText() + "5");
+    }
+    public void btn06Click(View view) {
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        eText.setText(eText.getText() + "6");
+    }
+    public void btn07Click(View view) {
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        eText.setText(eText.getText() + "7");
+    }
+    public void btn08Click(View view) {
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        eText.setText(eText.getText() + "8");
+    }
+    public void btn09Click(View view) {
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        eText.setText(eText.getText() + "9");
+    }
+    public void btnDotClick(View view) {
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        eText.setText(eText.getText() + ".");
+    }
+
+    public void btnAddClick(View view) {
+        optr = Operator.add;
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        data1 = Double.parseDouble(eText.getText().toString());
+        eText.setText("");
+    }
+    public void btnMinusClick(View view) {
+        optr = Operator.minus;
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        data1 = Double.parseDouble(eText.getText().toString());
+        eText.setText("");
+    }
+    public void btnMultiplyClick(View view) {
+        optr = Operator.multiply;
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        data1 = Double.parseDouble(eText.getText().toString());
+        eText.setText("");
+    }
+    public void btnDivideClick(View view) {
+        optr = Operator.divide;
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        data1 = Double.parseDouble(eText.getText().toString());
+        eText.setText("");
+    }
+    public void btnClearClick(View view) {
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        eText.setText("");
     }
 }
